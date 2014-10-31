@@ -76,7 +76,34 @@ body {
     top: 50%;
     text-align: center;
     transform: translateY(-50%);
+    -webkit-transition: top .1s ease-out;
+            transition: top .1s ease-out;
     width: 100%;
+}
+
+.result:hover .time {
+    top: 49%;
+}
+
+.result:after {
+    color: hsla(0, 0%, 100%, .6);
+    content: "or";
+    font-size: .875rem;
+    line-height: 1.714;
+    font-weight: 400;
+    font-style: italic;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -1em;
+    text-align: center;
+    text-shadow: none;
+    transform: translateY(-50%);
+    width: 2em;
+}
+
+.result:last-child:after {
+    content: "";
 }
 
 sup {
@@ -89,6 +116,18 @@ sup {
     top: -2em;
     text-shadow: none;
     vertical-align: baseline;
+}
+
+.opening {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
 }
 
 .about {
