@@ -1,9 +1,5 @@
 html {
-    background: -webkit-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%); /* W3C */
+    background: hsl(192, 77%, 53%);
     color: hsl(0, 0%, 100%);
     height: 100%;
     -webkit-box-sizing: border-box;
@@ -42,42 +38,28 @@ body {
 
 .results {
     box-shadow: 0 8px 0 hsla(192, 77%, 33%, .2);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
 }
 
 .result {
-    border-right: 1px dashed hsla(0,0%,100%,.4);
-    height: 100%;
+    border-bottom: 1px dashed hsla(0,0%,100%,.4);
     font-size: 2rem;
     font-weight: 700;
     line-height: 1;
-    padding: 0;
+    padding: 3rem 0;
     position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     text-align: center;
     text-shadow: 1px 1px 2px hsla(192, 77%, 33%, .6);
 }
 
 .result:last-child {
+    border-bottom: none;
     border-right: none;
 }
 
 .time {
     display: block;
     margin: 0 auto;
-    position: absolute;
-    top: 50%;
     text-align: center;
-    transform: translateY(-50%);
-    -webkit-transition: top .1s ease-out;
-            transition: top .1s ease-out;
     width: 100%;
 }
 
@@ -93,13 +75,12 @@ body {
     font-weight: 400;
     font-style: italic;
     display: block;
+    margin: 0 auto;
     position: absolute;
-    top: 50%;
-    right: -1em;
+    bottom: -12px;
     text-align: center;
     text-shadow: none;
-    transform: translateY(-50%);
-    width: 2em;
+    width: 100%;
 }
 
 .result:last-child:after {
@@ -123,11 +104,9 @@ sup {
     font-style: italic;
     font-size: 1rem;
     margin: 0;
+    padding: 1.5rem;
+    padding-bottom: 0;
     text-align: center;
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
 }
 
 .about {
@@ -136,4 +115,61 @@ sup {
     line-height: 1.714;
     margin: 0;
     padding: 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+    html {
+        background: -webkit-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%);
+        background:    -moz-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%);
+        background:     -ms-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%);
+        background:      -o-linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%);
+        background:         linear-gradient(90deg, hsl(192, 77%, 53%) 10%, hsl(63, 50%, 85%) 90%);
+    }
+
+    .results {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .result {
+        border-bottom: none;
+        border-right: 1px dashed hsla(0,0%,100%,.4);
+        height: 100%;
+        padding: 0;
+        position: relative;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        text-align: center;
+        text-shadow: 1px 1px 2px hsla(192, 77%, 33%, .6);
+    }
+
+    .result:after {
+        top: 50%;
+        right: -1em;
+        transform: translateY(-50%);
+        width: 2em;
+    }
+
+    .time {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+        -webkit-transition: top .1s ease-out;
+                transition: top .1s ease-out;
+        width: 100%;
+    }
+
+    .opening {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 }
