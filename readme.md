@@ -6,13 +6,15 @@ It takes the average human 14 minutes to fall asleep; a sleep cycle typically la
 
 ### About the project
 
-- It is based on [sleepyti.me](http://sleepyti.me), by Mr. David Shaw (davidshaw/sleepyti.me);
+- It is based on [sleepyti.me](http://sleepyti.me), by Mr. David Shaw ([davidshaw/sleepyti.me](https://github.com/davidshaw/sleepyti.me));
 - The font is the lovely BPreplay, by [George Triantafyllakos](http://backpacker.gr) and is being served by [Brick](http://brick.im/fonts/bpreplay/);
 - The background gradient is from [uiGradients](http://uigradients.com/#Shore).
 
 ### To-dos
 
 - [ ] Auto-refresh the times
+- [ ] Contact info
+- [ ] Custom domain
 - [ ] A nice overlay for the info
 - [ ] Customize falling sleep and sleep cycle times
 - [ ] favicon & apple-touch-icon
