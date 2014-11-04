@@ -6,21 +6,38 @@
         <title>waking time</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="//brick.a.ssl.fastly.net/BPreplay:400,700,400i,700i">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+        <script src="js/min/modernizr.custom-min.js"></script>
     </head>
     <body>
-        <h1 class="opening"><i class="fa fa-bell-o"></i> If you're going to sleep right now, you should try to wake up by one of these times</h1>
+        <h1 class="opening"><i class="fa fa-bell-o"></i> If you're going to sleep right now, you should try to wake up by one of these times <button id="trigger-overlay" class="button" type="button">What?</button></h1>
 
-        <div id="js-results" class="results"></div>
+        <section id="js-results" class="results"></section>
 
-        <div class="about">
-            <p><i class="fa fa-coffee"></i> What we know: it takes the average human <em>14 minutes</em> to fall asleep; a <strong>sleep cycle</strong> typically lasts <em>90 minutes</em>; a good night's sleep consists of <em>5 or 6</em> complete sleep cycles. Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</p>
+        <div class="overlay overlay-slidedown">
+            <button type="button" class="overlay-close"><i class="fa fa-times"></i></button>
+            <div class="about">
+                <h1>waking time is a calculator that helps you find the best time to wake up.</h1>
+                <h3>What we know:</h3>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-coffee"></i>It takes the average human <em>14 minutes</em> to fall asleep;</li>
+                    <li><i class="fa-li fa fa-coffee"></i>A <strong>sleep cycle</strong> typically lasts <em>90 minutes</em>;</li>
+                    <li><i class="fa-li fa fa-coffee"></i>A good night's sleep consists of <em>5 or 6</em> complete sleep cycles;</li>
+                    <li><i class="fa-li fa fa-coffee"></i>Waking up in the middle of a sleep cycle leaves you feeling tired and groggy, but waking up <em>in between</em> cycles lets you wake up feeling refreshed and alert!</li>
+                    <li><i class="fa-li fa fa-coffee"></i>You should double check all the information you read on the internet.</li>
+                </ul>
+                <div class="contact"><i class="fa fa-bicycle"></i> Find me on Twitter: <a href="https://twitter.com/seufelipe">@seufelipe</a>. This project is on <a href="https://github.com/seufelipe/wakingtime">GitHub</a>.</div>
+            </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="js/min/classie-min.js"></script>
+        <script src="js/min/overlay-min.js"></script>
         <script src="js/min/main-min.js"></script>
     </body>
 </html>

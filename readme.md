@@ -8,7 +8,8 @@ It takes the average human 14 minutes to fall asleep; a sleep cycle typically la
 
 - It is based on [sleepyti.me](http://sleepyti.me), by Mr. David Shaw ([davidshaw/sleepyti.me](https://github.com/davidshaw/sleepyti.me));
 - The font is the lovely BPreplay, by [George Triantafyllakos](http://backpacker.gr) and is being served by [Brick](http://brick.im/fonts/bpreplay/);
-- The background gradient is from [uiGradients](http://uigradients.com/#Shore).
+- The background gradient is from [uiGradients](http://uigradients.com/#Shore);
+- The icons are [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
 ### To-dos
 
